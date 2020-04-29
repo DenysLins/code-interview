@@ -1,6 +1,8 @@
+# https://leetcode.com/problems/climbing-stairs/
+
+
 class Solution:
     def climbStairs(self, n: int) -> int:
-        self.n = n
         a, b = 1, 2
         if n < 2:
             return n
