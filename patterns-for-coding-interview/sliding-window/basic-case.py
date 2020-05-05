@@ -5,7 +5,7 @@ class AverageOfSubarrayOfSizeK:
     # Time complexity: O(N * K)
     def findAveragesBruteForce(self, k: int, arr: List[int]) -> List[float]:
         result = []
-        for i in range(len(arr) - k + 1): # number of subarray  = n - k + 1
+        for i in range(len(arr) - k + 1):
             _sum = 0
             for j in range(i, i + k):
                 _sum += arr[j]
