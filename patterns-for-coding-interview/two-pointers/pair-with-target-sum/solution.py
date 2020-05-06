@@ -3,16 +3,16 @@ from typing import List
 
 class PairWithTargetSum:
     def search(self, arr: List[int], targetSum: int) -> List[int]:
-        i, j = 0, len(arr) - 1
+        left, right = 0, len(arr) - 1
         result = [-1, -1]
-        for n in range(len(arr)):
-            sum = arr[i] + arr[j]
+        while left < right:
+            sum = arr[left] + arr[right]
             if sum > targetSum:
-                j -= 1
+                right -= 1
             elif sum < targetSum:
-                i += 1
+                left += 1
             else:
-                return [i, j]
+                return [left, right]
         return result
 
 
