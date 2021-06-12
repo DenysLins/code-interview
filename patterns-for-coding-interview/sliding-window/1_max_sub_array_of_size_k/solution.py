@@ -1,9 +1,9 @@
+# Time Complexity O(N). Space Complexity O(1)
 from typing import List
 
 
 class MaxSumSubarrayOfSizeK:
     def findMaxSumSubarray(self, k: int, arr: List[int]) -> int:
-        # Time Complexity O(N). Space Complexity O(1)
         _sum = 0
         _max = 0
         for i in range(len(arr)):

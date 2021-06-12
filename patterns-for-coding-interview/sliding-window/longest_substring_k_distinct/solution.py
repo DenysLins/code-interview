@@ -1,7 +1,7 @@
 
 class LongestSubstringKDistinct:
     # Time complexity = O(S). Space complexity = O(K)
-    def findLength(self, s: str, k: int ) -> int:
+    def findLength(self, s: str, k: int) -> int:
         longest = 0
         start = 0
         chars = {}
@@ -18,7 +18,6 @@ class LongestSubstringKDistinct:
                 start += 1
             longest = max(i - start + 1, longest)
         return longest
-
 
 
 if __name__ == "__main__":
