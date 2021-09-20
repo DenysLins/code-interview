@@ -1,11 +1,5 @@
 # https://leetcode.com/problems/add-two-numbers/
 
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
-
 from typing import Optional
 
 
@@ -48,9 +42,6 @@ n2l1 = ListNode(9, n3l1)
 n1l1 = ListNode(9, n2l1)
 n0l1 = ListNode(9, n1l1)
 
-# n6l2 = ListNode(9)
-# n5l2 = ListNode(9, n6l2)
-# n4l2 = ListNode(9, n5l2)
 n3l2 = ListNode(9)
 n2l2 = ListNode(9, n3l2)
 n1l2 = ListNode(9, n2l2)
@@ -58,8 +49,3 @@ n0l2 = ListNode(9, n1l2)
 
 if __name__ == "__main__":
     print(Solution().addTwoNumbers(n0l1, n0l2))
-
-#   1 1 1 1 1 1 1
-# 9 9 9 9 9 9 9
-# 9 9 9 9
-# 8 9 9 9 0 0 0 1
