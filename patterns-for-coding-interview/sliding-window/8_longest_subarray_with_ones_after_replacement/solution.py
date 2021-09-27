@@ -1,4 +1,6 @@
 # https://leetcode.com/problems/longest-substring-without-repeating-characters/
+# Time complexity = O(N). Space complexity = O(1)
+
 
 from typing import List
 

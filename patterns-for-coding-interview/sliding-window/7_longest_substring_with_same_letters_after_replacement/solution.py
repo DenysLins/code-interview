@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/longest-substring-without-repeating-characters/
+# Time complexity = O(N). Space complexity = O(1)
 
 
 def length_of_longest_substring(s: str, k: int) -> int:
@@ -20,5 +21,5 @@ def length_of_longest_substring(s: str, k: int) -> int:
 print(length_of_longest_substring("ABAB", 2))  # 4
 print(length_of_longest_substring("AABABBA", 1))  # 4
 print(length_of_longest_substring("aabccbb", 2))  # 5
-print(length_of_longest_substring("", 0))  # 5
+print(length_of_longest_substring("", 0))  # 0
 print(length_of_longest_substring("ABBB", 2))  # 4
